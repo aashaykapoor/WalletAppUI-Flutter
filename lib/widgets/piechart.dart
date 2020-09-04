@@ -8,8 +8,8 @@ class PieChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(right: 14),
-      height: 200,
-      width: 200,
+      height: 150,
+      width: 150,
       decoration: BoxDecoration(
           shape: BoxShape.circle, boxShadow: customShadow, color: primaryColor),
       child: Stack(
@@ -17,14 +17,14 @@ class PieChart extends StatelessWidget {
           CustomPaint(
             child: Container(
               
-
             ),
+            
             foregroundPainter: PieChartPainter(),
           ),
           Center(
             child: Container(
               child: Center(child: Text("\$1500 ",style: TextStyle(fontWeight: FontWeight.bold),)),
-              padding: EdgeInsets.only(right: 16),
+              padding: EdgeInsets.all(10),
               height: 70,
               width: 70,
               decoration: BoxDecoration(
